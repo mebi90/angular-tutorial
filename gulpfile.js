@@ -8,3 +8,8 @@ gulp.task('test', function () {
     	livereload: true
   	});
 });
+
+gulp.task('livereload', function () {
+    watch('app/**/*')
+        .pipe(connect.reload());
+});
