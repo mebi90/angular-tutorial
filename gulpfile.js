@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-  connect = require('gulp-connect');
+  connect = require('gulp-connect'),
+  watch = require('gulp-watch');
  
 gulp.task('test', function () {
 	connect.server({
